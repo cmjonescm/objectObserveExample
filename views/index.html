@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html>
-    <!-- 1. Load Polymer -->
-    <script src="/client_modules/polymer/polymer.min.js"></script>
+<html ng-app="myApp">
 
-    <!-- 2. Load a component -->
-    <link rel="import" href="/views/test.html">
+    <script src="/client_modules/angular/angular.js"></script>
+    <script src="/controllers/controller.js"></script>
+
+    <script src="/app.js"></script>
 
     <head>
-        <title></title>
+        <title>Object observe Simple Example</title>
     </head>
 
-    <body>
-        <h1>Hello World</h1>
-
-        <!-- 3. Declare the component by its tag. -->
-        <my-element bar="CJ"></my-element>
-
+    <body ng-controller="myController">
+        <button ng-click="clickMe()">Click me!</button>
     </body>
 </html>
 
